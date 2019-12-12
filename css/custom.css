@@ -1,0 +1,311 @@
+@font-face {
+    font-family: "NovaBold";
+    src: url("/assets/fonts/proxima-nova-bold.otf");
+}
+@font-face {
+  font-family: "Vatican";
+  src: url("/assets/fonts/Vattican.ttf");
+}
+a {
+  font-family: "NovaBold";
+}
+
+.red {
+    color: #ff0000;
+}
+h1{
+    font-family: "NovaBold";
+}
+a.button {
+    font-size: 13px;
+}
+html {
+  scroll-behavior: smooth;
+}
+.button {
+    font-family: "NovaBold";
+    display: inline-block;
+    padding: .75rem 1.25rem;
+    color: #000;
+    text-transform: uppercase;
+    font-size: 1rem;
+    letter-spacing: .15rem;
+    transition: all .7s;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    min-width: 200px;
+    height: 48px;
+    text-align: center;
+    margin-top: 20px;
+    padding: 18px;
+    font-weight: bold;
+    border: 2px solid #ff0000;
+  }
+  .button:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    z-index: -2;
+  }
+  .button:before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background-color: #ff1100;
+    transition: all .7s;
+    z-index: -1;
+  }
+
+  .button:hover {
+    color: #fff;
+  }
+  .button:hover:before {
+    width: 100%;
+  }
+  .navbar {
+      padding: 1.2rem 0.4rem;
+  }
+  .box-services {
+      display: flex;
+      flex: 1;
+      width: 200px;
+      flex-basis: 200px;
+      flex-direction: column;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      margin-top: 40px;
+      border-right: 1px solid #555;
+      /* border-bottom: 1px solid #555; */
+      padding: 15px;
+      position: relative;
+  }
+
+.box-services h1 {
+    margin-bottom: 20px;
+    margin-top: 20px;
+    font-size: 2rem;
+}
+
+.box-services img {
+  width: 110px;
+  height: 110px;
+  margin-top: 20px;
+  margin-bottom: 15px;
+  padding-bottom: 10px;
+}
+.box-services .button {
+  text-decoration: none;
+  border-radius: 25px;
+}
+.box-services h1 {
+  border-bottom: 0.50px solid #555;
+  width: 200px;
+  text-align: center;
+  padding-bottom: 15px;
+  color: black;
+}
+.subtitle {
+  font-family: "NovaBold";
+  text-align: center;
+  color: #000;
+  padding: 0 20px 0 20px;
+  margin-bottom: 10px;
+}
+.depoimentos {
+  margin-top: 100px;
+  font-family: "NovaBold";
+  color: white;
+  overflow: hidden;
+  padding: 50px;
+  margin-bottom: 20px;
+}
+.depoimentos h2 {
+  font-size: 1.5em;
+  margin-bottom: 20px;
+}
+
+.depoimentos .blockquote{
+  font-size: 1.1em;
+}
+.depoimentos .h4 {
+  font-size: 20px;
+}
+.navbar {
+  padding: 1.2rem 3.4rem !important;
+}
+
+section{
+  text-align:center;
+}
+.footer #button{
+	width:37px;
+	height:37px;
+	border: #727172 12px solid;
+	border-radius:35px;
+	margin:0 auto;
+	position:relative;
+	-webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease;
+}
+.footer #button:hover{
+	width:35px;
+	height:35px;
+	border: #3A3A3A 12px solid;
+	-webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease;
+	position:relative;
+}
+.footer {
+	bottom:0;
+	left:0;
+	position:fixed;
+    width: 100%;
+    height: 2.5em;
+    overflow:hidden;
+    margin:0 auto;
+	-webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease;
+	z-index:999;
+}
+.footer:hover {
+	-webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease;
+	height: 10em;
+}
+.footer #container{
+	margin-top:5px;
+	width:100%;
+height:100%;
+  position:relative;
+  top:0;
+  left:0;
+	background: #3A3A3A;
+}
+.footer #cont{
+  position:relative;
+  top:-45px;
+  right:190px;
+	width:150px;
+	height:auto;
+	margin:0 auto;
+}
+.footer_center{
+	width:500px;
+	float:left;
+  text-align:center;
+}
+.footer h3{
+	font-family: 'Helvetica';
+	font-size: 30px;
+	font-weight: 100;
+	margin-top:70px;
+	margin-left:40px;
+}
+.circle-button{
+  font-family: 'Roboto', sans-serif;
+	color: #ccc;
+	display: inline-block;
+  font-size: 2rem;
+  border-radius: 50%;
+	transition: all 0.2s ease;
+}
+
+.circle-button:hover{
+	animation: circle-anim 0.3s ease forwards;
+	transition: all 0.4s ease;
+}
+
+.grow-container{
+  display: inline-block;
+  margin: 1em;
+}
+
+.to-red:hover{
+  background: #E5393F;
+}
+
+.to-twitter:hover{
+  background: #1DA1F3;
+}
+
+.to-facebook:hover{
+  background: #3B5998;
+}
+
+.to-linkedin:hover{
+  background: #0077B5;
+}
+
+.to-reddit:hover{
+  background: #FF4500;
+}
+
+@keyframes circle-anim{
+	0% {
+		
+	}
+	
+	90%{
+		padding: 0.35em;
+		margin: -0.35em; 
+	}
+	
+	100%{
+		padding: 0.25em;
+		margin: -0.25em; 
+	}
+}
+a.top {
+  display: none;
+  right: 30px;
+  top: 85vh;
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  border-radius: 30px;
+  border: 0.75px solid #555;
+  background: transparent;
+  z-index: 2000;
+  outline: none;
+  cursor: pointer;
+}
+a.top i {
+  right: 54px;
+    top: 88.5vh;
+    position: fixed;
+    color: #ff1111;
+}
+a.top:hover {
+  background: whitesmoke;
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + a{
+  padding-top: 60px;
+}
